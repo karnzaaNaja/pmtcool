@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/layout_tool_bar_main" />
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="ข่าวสาร"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+      <ImageView
+          android:id="@+id/imNews"
+          android:layout_width="match_parent"
+          android:layout_height="250dp"
+          android:layout_marginTop="10dp"
+          />
+
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/detailCon"
+            android:background="#cccccc"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="ห้องเย็นตั้งพื้นสำเร็จรูป (Bitzer)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listPmtPop"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="ห้องเย็นตั้งพื้นสำเร็จรูป (PMT CR-Eco)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listPmtMain"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="ห้องเย็นเฉียบพลันสำเร็จรูป (AIR BLAST ROOM)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listPmtnew"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+        </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="70dp"/>
+
+    </LinearLayout>
+</ScrollView>

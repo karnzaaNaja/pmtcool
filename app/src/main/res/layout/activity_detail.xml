@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myScrollingContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/layoutDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.msigl62.coworkandroiduset.ui.detail.DetailPopularActivity">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/cardview_dark_background"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:ignore="UnknownIdInLayout" />
+
+        <ImageView
+            android:id="@+id/backMain"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="13.4dp"
+            android:layout_marginTop="13.17dp"
+            android:src="@drawable/leftarrow" />
+
+        <LinearLayout
+            android:id="@+id/sliderDots"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="270dp"
+            android:layout_marginTop="230dp"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sliderDots"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="SpUsage"
+            tools:text="size" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/size"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            tools:text="Suthep,Cjiangmai" />
+
+        <LinearLayout
+            android:id="@+id/layoutShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/type"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="ความนิยมในการสั่งซื้อ:"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/rating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:stepSize="8" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="ส่วนประกอบทางวิศวกรรม:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/recipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:text="sdsd" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="ข้อมูลรายละเอียด:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailPmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:text="sdsds" />
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="ประเภทห้องเย็น:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="sdsds" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="รีวิว"
+                android:textStyle="bold" />
+
+            <include layout="@layout/list_re_view" />
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/btnBackToTop"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignEnd="@+id/call"
+            android:layout_below="@+id/layoutShow"
+            android:src="@drawable/back" />
+
+        <Button
+            android:id="@+id/call"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutShow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/buttom_style"
+            android:text="ติดต่อขอใบเสนอราคา"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/call"
+            android:layout_marginTop="10dp" />
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
